@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		342304CA29F218C30052ADAA /* ActorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 342304C929F218C30052ADAA /* ActorCell.xib */; };
+		342304CC29F21AAB0052ADAA /* ActorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342304CB29F21AAB0052ADAA /* ActorCell.swift */; };
+		3424255F29EFADBD000EF30A /* PosterCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3424255E29EFADBD000EF30A /* PosterCVC.swift */; };
+		3424256129EFAE81000EF30A /* ActorRatingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3424256029EFAE81000EF30A /* ActorRatingVC.swift */; };
+		3424256329EFB105000EF30A /* MusicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3424256229EFB105000EF30A /* MusicVC.swift */; };
+		3424256529EFB1C9000EF30A /* PlayMusicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3424256429EFB1C9000EF30A /* PlayMusicVC.swift */; };
+		3434A96529F3166D00C1BC6A /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 3434A96429F3166D00C1BC6A /* SDWebImage */; };
+		3434A96729F3166D00C1BC6A /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3434A96629F3166D00C1BC6A /* SDWebImageMapKit */; };
+		3434A96A29F3167E00C1BC6A /* YouTubeiOSPlayerHelper in Frameworks */ = {isa = PBXBuildFile; productRef = 3434A96929F3167E00C1BC6A /* YouTubeiOSPlayerHelper */; };
+		343689FB29EE03C800C51FC0 /* DataFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343689FA29EE03C800C51FC0 /* DataFile.swift */; };
+		343689FD29EE044200C51FC0 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343689FC29EE044200C51FC0 /* HomeVC.swift */; };
+		343689FF29EE047D00C51FC0 /* FilmographyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343689FE29EE047D00C51FC0 /* FilmographyVC.swift */; };
+		348EFAB829E9D62200B6A4E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348EFAB729E9D62200B6A4E3 /* AppDelegate.swift */; };
+		348EFABA29E9D62200B6A4E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348EFAB929E9D62200B6A4E3 /* SceneDelegate.swift */; };
+		348EFABC29E9D62200B6A4E3 /* ActorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348EFABB29E9D62200B6A4E3 /* ActorVC.swift */; };
+		348EFABF29E9D62200B6A4E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 348EFABD29E9D62200B6A4E3 /* Main.storyboard */; };
+		348EFAC129E9D62800B6A4E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 348EFAC029E9D62800B6A4E3 /* Assets.xcassets */; };
+		348EFAC429E9D62800B6A4E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 348EFAC229E9D62800B6A4E3 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		342304C929F218C30052ADAA /* ActorCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActorCell.xib; sourceTree = "<group>"; };
+		342304CB29F21AAB0052ADAA /* ActorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorCell.swift; sourceTree = "<group>"; };
+		3424255E29EFADBD000EF30A /* PosterCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterCVC.swift; sourceTree = "<group>"; };
+		3424256029EFAE81000EF30A /* ActorRatingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorRatingVC.swift; sourceTree = "<group>"; };
+		3424256229EFB105000EF30A /* MusicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicVC.swift; sourceTree = "<group>"; };
+		3424256429EFB1C9000EF30A /* PlayMusicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayMusicVC.swift; sourceTree = "<group>"; };
+		343689FA29EE03C800C51FC0 /* DataFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFile.swift; sourceTree = "<group>"; };
+		343689FC29EE044200C51FC0 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		343689FE29EE047D00C51FC0 /* FilmographyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmographyVC.swift; sourceTree = "<group>"; };
+		348EFAB429E9D62200B6A4E3 /* MallelaGautamEntertainmentApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MallelaGautamEntertainmentApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		348EFAB729E9D62200B6A4E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		348EFAB929E9D62200B6A4E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		348EFABB29E9D62200B6A4E3 /* ActorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorVC.swift; sourceTree = "<group>"; };
+		348EFABE29E9D62200B6A4E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		348EFAC029E9D62800B6A4E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		348EFAC329E9D62800B6A4E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		348EFAC529E9D62800B6A4E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		348EFAB129E9D62200B6A4E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3434A96729F3166D00C1BC6A /* SDWebImageMapKit in Frameworks */,
+				3434A96529F3166D00C1BC6A /* SDWebImage in Frameworks */,
+				3434A96A29F3167E00C1BC6A /* YouTubeiOSPlayerHelper in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3424256629EFB27D000EF30A /* ActorGroup */ = {
+			isa = PBXGroup;
+			children = (
+				348EFABB29E9D62200B6A4E3 /* ActorVC.swift */,
+				342304C929F218C30052ADAA /* ActorCell.xib */,
+				342304CB29F21AAB0052ADAA /* ActorCell.swift */,
+				3424255E29EFADBD000EF30A /* PosterCVC.swift */,
+				343689FE29EE047D00C51FC0 /* FilmographyVC.swift */,
+				3424256029EFAE81000EF30A /* ActorRatingVC.swift */,
+			);
+			path = ActorGroup;
+			sourceTree = "<group>";
+		};
+		3424256729EFB2A4000EF30A /* MusicGroup */ = {
+			isa = PBXGroup;
+			children = (
+				3424256229EFB105000EF30A /* MusicVC.swift */,
+				3424256429EFB1C9000EF30A /* PlayMusicVC.swift */,
+			);
+			path = MusicGroup;
+			sourceTree = "<group>";
+		};
+		348EFAAB29E9D62200B6A4E3 = {
+			isa = PBXGroup;
+			children = (
+				348EFAB629E9D62200B6A4E3 /* MallelaGautamEntertainmentApp */,
+				348EFAB529E9D62200B6A4E3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		348EFAB529E9D62200B6A4E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				348EFAB429E9D62200B6A4E3 /* MallelaGautamEntertainmentApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		348EFAB629E9D62200B6A4E3 /* MallelaGautamEntertainmentApp */ = {
+			isa = PBXGroup;
+			children = (
+				348EFACB29E9D66600B6A4E3 /* SupportingFiles */,
+				3424256629EFB27D000EF30A /* ActorGroup */,
+				3424256729EFB2A4000EF30A /* MusicGroup */,
+				343689FC29EE044200C51FC0 /* HomeVC.swift */,
+				343689FA29EE03C800C51FC0 /* DataFile.swift */,
+				348EFABD29E9D62200B6A4E3 /* Main.storyboard */,
+				348EFAC029E9D62800B6A4E3 /* Assets.xcassets */,
+				348EFAC229E9D62800B6A4E3 /* LaunchScreen.storyboard */,
+				348EFAC529E9D62800B6A4E3 /* Info.plist */,
+			);
+			path = MallelaGautamEntertainmentApp;
+			sourceTree = "<group>";
+		};
+		348EFACB29E9D66600B6A4E3 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				348EFAB729E9D62200B6A4E3 /* AppDelegate.swift */,
+				348EFAB929E9D62200B6A4E3 /* SceneDelegate.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		348EFAB329E9D62200B6A4E3 /* MallelaGautamEntertainmentApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 348EFAC829E9D62900B6A4E3 /* Build configuration list for PBXNativeTarget "MallelaGautamEntertainmentApp" */;
+			buildPhases = (
+				348EFAB029E9D62200B6A4E3 /* Sources */,
+				348EFAB129E9D62200B6A4E3 /* Frameworks */,
+				348EFAB229E9D62200B6A4E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MallelaGautamEntertainmentApp;
+			packageProductDependencies = (
+				3434A96429F3166D00C1BC6A /* SDWebImage */,
+				3434A96629F3166D00C1BC6A /* SDWebImageMapKit */,
+				3434A96929F3167E00C1BC6A /* YouTubeiOSPlayerHelper */,
+			);
+			productName = MallelaGautamEntertainmentApp;
+			productReference = 348EFAB429E9D62200B6A4E3 /* MallelaGautamEntertainmentApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		348EFAAC29E9D62200B6A4E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					348EFAB329E9D62200B6A4E3 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 348EFAAF29E9D62200B6A4E3 /* Build configuration list for PBXProject "MallelaGautamEntertainmentApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 348EFAAB29E9D62200B6A4E3;
+			packageReferences = (
+				3434A96329F3166D00C1BC6A /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				3434A96829F3167E00C1BC6A /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */,
+			);
+			productRefGroup = 348EFAB529E9D62200B6A4E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				348EFAB329E9D62200B6A4E3 /* MallelaGautamEntertainmentApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		348EFAB229E9D62200B6A4E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				348EFAC429E9D62800B6A4E3 /* LaunchScreen.storyboard in Resources */,
+				348EFAC129E9D62800B6A4E3 /* Assets.xcassets in Resources */,
+				348EFABF29E9D62200B6A4E3 /* Main.storyboard in Resources */,
+				342304CA29F218C30052ADAA /* ActorCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		348EFAB029E9D62200B6A4E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				342304CC29F21AAB0052ADAA /* ActorCell.swift in Sources */,
+				3424256529EFB1C9000EF30A /* PlayMusicVC.swift in Sources */,
+				348EFABC29E9D62200B6A4E3 /* ActorVC.swift in Sources */,
+				343689FD29EE044200C51FC0 /* HomeVC.swift in Sources */,
+				348EFAB829E9D62200B6A4E3 /* AppDelegate.swift in Sources */,
+				343689FF29EE047D00C51FC0 /* FilmographyVC.swift in Sources */,
+				3424255F29EFADBD000EF30A /* PosterCVC.swift in Sources */,
+				3424256329EFB105000EF30A /* MusicVC.swift in Sources */,
+				3424256129EFAE81000EF30A /* ActorRatingVC.swift in Sources */,
+				348EFABA29E9D62200B6A4E3 /* SceneDelegate.swift in Sources */,
+				343689FB29EE03C800C51FC0 /* DataFile.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		348EFABD29E9D62200B6A4E3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				348EFABE29E9D62200B6A4E3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		348EFAC229E9D62800B6A4E3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				348EFAC329E9D62800B6A4E3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		348EFAC629E9D62800B6A4E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		348EFAC729E9D62900B6A4E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		348EFAC929E9D62900B6A4E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MallelaGautamEntertainmentApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.northwest.MallelaGautamEntertainmentApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		348EFACA29E9D62900B6A4E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MallelaGautamEntertainmentApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.northwest.MallelaGautamEntertainmentApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		348EFAAF29E9D62200B6A4E3 /* Build configuration list for PBXProject "MallelaGautamEntertainmentApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				348EFAC629E9D62800B6A4E3 /* Debug */,
+				348EFAC729E9D62900B6A4E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		348EFAC829E9D62900B6A4E3 /* Build configuration list for PBXNativeTarget "MallelaGautamEntertainmentApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				348EFAC929E9D62900B6A4E3 /* Debug */,
+				348EFACA29E9D62900B6A4E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3434A96329F3166D00C1BC6A /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		3434A96829F3167E00C1BC6A /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/youtube/youtube-ios-player-helper";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3434A96429F3166D00C1BC6A /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3434A96329F3166D00C1BC6A /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		3434A96629F3166D00C1BC6A /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3434A96329F3166D00C1BC6A /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+		3434A96929F3167E00C1BC6A /* YouTubeiOSPlayerHelper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3434A96829F3167E00C1BC6A /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */;
+			productName = YouTubeiOSPlayerHelper;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 348EFAAC29E9D62200B6A4E3 /* Project object */;
+}
