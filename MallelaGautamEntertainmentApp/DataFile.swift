@@ -47,3 +47,18 @@ var actors = [actor1, actor2, actor3, actor4, actor5]
 var musics = [music1, music2, music3, music4, music5]
 
 
+struct Rating{
+    var acting: String
+    var dance: String
+    var fight: String
+    var overAll: Int
+}
+
+var actorRating1 = Rating(acting: "", dance: "", fight: "", overAll: 0)
+var actorRating2 = Rating(acting: "", dance: "", fight: "", overAll: 0)
+var actorRating3 = Rating(acting: "", dance: "", fight: "", overAll: 0)
+var actorRating4 = Rating(acting: "", dance: "", fight: "", overAll: 0)
+var actorRating5 = Rating(acting: "", dance: "", fight: "", overAll: 0)
+
+
+var actorRating = [actorRating1, actorRating2, actorRating3, actorRating4, actorRating5]

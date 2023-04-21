@@ -8,10 +8,6 @@
 import UIKit
 import SDWebImage
 
-
-
-
-
 class ActorVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var actorTableView: UITableView!

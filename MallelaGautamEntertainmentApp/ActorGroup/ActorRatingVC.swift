@@ -9,7 +9,7 @@ import UIKit
 
 class ActorRatingVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
-//    var savedRatings = [String:String]
+    
     
     
     @objc func actionLabelTapped() {
@@ -92,9 +92,12 @@ class ActorRatingVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
         
         
         
-//        actionEpisodesTF.text = actors[index].actionEpisodes
-//        danceTF.text = actors[index].dancingSkills
-//        overallPerformanceSlider.value = actors[index].overallRating
+        actionEpisodesTF.text = actorRating[index].fight
+        danceTF.text = actorRating[index].dance
+        actingTF.text = actorRating[index].acting
+        overallPerformanceSlider.value = Float(actorRating[index].overAll)
+        
+        
     }
     
     
@@ -147,10 +150,10 @@ class ActorRatingVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
     
     @IBAction func save(_ sender: UIButton) {
         
-//        actors[index].actionEpisodes = actionEpisodesTF.text!
-//        actors[index].dancingSkills = danceTF.text!
-//        actors[index].overallRating = overallPerformanceSlider.value
-//        actors[index].yearsActive = actingTF.text!
+        actorRating[index].acting = actingTF.text!
+        actorRating[index].dance = danceTF.text!
+        actorRating[index].fight = actionEpisodesTF.text!
+        actorRating[index].overAll =  Int(overallPerformanceSlider.value)
         let alertController = UIAlertController(title: "Sucess ✅", message: "Ratings are saved", preferredStyle: .alert)
 
         // add an action to the alert
