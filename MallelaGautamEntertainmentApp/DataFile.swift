@@ -25,15 +25,15 @@ struct Music: Hashable{
     var videoId: String
 }
 
-var actor1 = Actor(fullName: "Allu Arjun", yearsActive: "2", movies: ["movie1","movie2"], actorImageName: "https://upload.wikimedia.org/wikipedia/commons/f/f0/Allu_Arjun_at_62nd_Filmfare_awards_south.jpg", actionEpisodes: "one", dancingSkills: "dancing", performingSkills: "skill", overallRating: 10.0)
+var actor1 = Actor(fullName: "Allu Arjun", yearsActive: "2001 to Present", movies: ["movie1","movie2"], actorImageName: "https://upload.wikimedia.org/wikipedia/commons/f/f0/Allu_Arjun_at_62nd_Filmfare_awards_south.jpg", actionEpisodes: "one", dancingSkills: "dancing", performingSkills: "skill", overallRating: 10.0)
 
-var actor2 = Actor(fullName: "Mahesh Babu", yearsActive: "2", movies: ["movie1","movie2"], actorImageName: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Mahesh_Babu_in_Spyder.jpg/1024px-Mahesh_Babu_in_Spyder.jpg", actionEpisodes: "one", dancingSkills: "dancing", performingSkills: "skill", overallRating: 10.0)
+var actor2 = Actor(fullName: "Mahesh Babu", yearsActive: "2001 to Present", movies: ["movie1","movie2"], actorImageName: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Mahesh_Babu_in_Spyder.jpg/1024px-Mahesh_Babu_in_Spyder.jpg", actionEpisodes: "one", dancingSkills: "dancing", performingSkills: "skill", overallRating: 10.0)
 
-var actor3 = Actor(fullName: "Gopichand", yearsActive: "2", movies: ["movie1","movie2"], actorImageName: "https://upload.wikimedia.org/wikipedia/commons/3/3d/Gopichand.png", actionEpisodes: "one", dancingSkills: "dancing", performingSkills: "skill", overallRating: 10.0)
+var actor3 = Actor(fullName: "Gopichand", yearsActive: "2001 to Present", movies: ["movie1","movie2"], actorImageName: "https://upload.wikimedia.org/wikipedia/commons/3/3d/Gopichand.png", actionEpisodes: "one", dancingSkills: "dancing", performingSkills: "skill", overallRating: 10.0)
 
-var actor4 = Actor(fullName: "Prabhas", yearsActive: "2", movies: ["movie1","movie2"], actorImageName: "https://upload.wikimedia.org/wikipedia/commons/7/72/Prabhas_photo.jpg", actionEpisodes: "one", dancingSkills: "dancing", performingSkills: "skill", overallRating: 10.0)
+var actor4 = Actor(fullName: "Prabhas", yearsActive: "2001 to Present", movies: ["movie1","movie2"], actorImageName: "https://upload.wikimedia.org/wikipedia/commons/7/72/Prabhas_photo.jpg", actionEpisodes: "one", dancingSkills: "dancing", performingSkills: "skill", overallRating: 10.0)
 
-var actor5 = Actor(fullName: "Vijay Devarkonda", yearsActive: "2", movies: ["movie1","movie2"], actorImageName: "https://upload.wikimedia.org/wikipedia/commons/d/d0/Vijay_Deverakonda_at_NOTA_pressmeet_%28cropped%29.jpg", actionEpisodes: "one", dancingSkills: "dancing", performingSkills: "skill", overallRating: 10.0)
+var actor5 = Actor(fullName: "Vijay Devarkonda", yearsActive: "2001 to Present", movies: ["movie1","movie2"], actorImageName: "https://upload.wikimedia.org/wikipedia/commons/d/d0/Vijay_Deverakonda_at_NOTA_pressmeet_%28cropped%29.jpg", actionEpisodes: "one", dancingSkills: "dancing", performingSkills: "skill", overallRating: 10.0)
 
 
 

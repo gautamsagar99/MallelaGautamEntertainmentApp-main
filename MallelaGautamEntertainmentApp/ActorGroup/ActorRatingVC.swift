@@ -13,7 +13,7 @@ class ActorRatingVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
     
     
     @objc func actionLabelTapped() {
-        overlayView.backgroundColor = UIColor.black.withAlphaComponent(0.8)
+        overlayView.backgroundColor = UIColor.systemGray4.withAlphaComponent(1)
         pickerView.frame = CGRect(x: 0, y: self.view.frame.size.height - 300, width: self.view.frame.size.width, height: 300)
         overlayView.frame = pickerView.frame
         view.addSubview(overlayView)
@@ -22,7 +22,7 @@ class ActorRatingVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
     }
      
     @objc func danceLabelTapped() {
-        overlayView.backgroundColor = UIColor.black.withAlphaComponent(0.8)
+        overlayView.backgroundColor = UIColor.systemGray4.withAlphaComponent(1)
         pickerView.frame = CGRect(x: 0, y: self.view.frame.size.height - 300, width: self.view.frame.size.width, height: 300)
         overlayView.frame = pickerView.frame
         view.addSubview(overlayView)
@@ -30,7 +30,7 @@ class ActorRatingVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
         selectedLabel = "dance"
     }
     @objc func episodesLabelTapped() {
-        overlayView.backgroundColor = UIColor.black.withAlphaComponent(0.8)
+        overlayView.backgroundColor = UIColor.systemGray4.withAlphaComponent(1)
         pickerView.frame = CGRect(x: 0, y: self.view.frame.size.height - 300, width: self.view.frame.size.width, height: 300)
         overlayView.frame = pickerView.frame
         view.addSubview(overlayView)
@@ -171,6 +171,10 @@ class ActorRatingVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
         actingTF.text = ""
         danceTF.text = ""
         overallPerformanceSlider.value = 0
+        actorRating[index].acting = ""
+        actorRating[index].dance = ""
+        actorRating[index].fight = ""
+        actorRating[index].overAll =  0
     }
     
     // MARK: - Navigation

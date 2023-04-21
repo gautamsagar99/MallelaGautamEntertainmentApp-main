@@ -32,6 +32,9 @@ class ActorCell: UITableViewCell {
     }
 
     private func defaultAttributes(view: UIView){
+        let imageViewHeight = CGFloat(2.0) // You can adjust the margin as per your requirement
+           ActorCellIV.frame = CGRect(x: 8, y: 8, width: imageViewHeight, height: imageViewHeight)
+      
         view.layer.cornerRadius = 5.0
         view.layer.masksToBounds = true
         view.layer.borderWidth = 1.0

@@ -10,7 +10,9 @@ import UIKit
 
 class FilmographyVC: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
-    let images = [UIImage(named: "AlluArjun"), UIImage(named: "AlluArjun"), UIImage(named: "AlluArjun"), UIImage(named: "AlluArjun"), UIImage(named: "AlluArjun"), UIImage(named: "AlluArjun"),UIImage(named: "AlluArjun")]
+    let images = [UIImage(named: "AlluArjun"), UIImage(named: "AlluArjun"), UIImage(named: "AlluArjun"), UIImage(named: "AlluArjun"), UIImage(named: "AlluArjun"), UIImage(named: "AlluArjun"),]
+    
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         images.count
     }
@@ -18,28 +20,40 @@ class FilmographyVC: UIViewController, UICollectionViewDataSource, UICollectionV
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "filmCellSegue", for: indexPath) as? PosterCVC
         cell?.moviePosterIV.image = images[indexPath.item]
+        cell?.moviePosterIV.contentMode = .scaleToFill
+        cell?.moviePosterIV.clipsToBounds = true
+        cell?.moviePosterIV.frame = (cell?.contentView.frame)!
+        
         return cell!
     }
     
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-              if indexPath.item == 2 {
-                  // Third image cell in the section
-                  return CGSize(width: collectionView.bounds.width, height: 200)
-              } else {
-                  // First two image cells in the section
-                  return CGSize(width: collectionView.bounds.width / 2, height: 200)
-              }
+//        if indexPath.item ==1 {
+            // Third image cell in the section
+            return CGSize(width: 100, height: 400)
+//        }
+//              } else {
+//                  // First two imxage cells in the section
+//                  return CGSize(width: collectionView.bounds.width / 2, height: 200)
+//              }
           }
     
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("selected \(indexPath)")
+    }
+    
 //
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-             return 8
-         }
-//
-         func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-             return 8
-         }
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+//             return 0
+//         }
+////
+//         func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+//             return 0
+//         }
+    
+    
      
 
     
@@ -52,6 +66,8 @@ class FilmographyVC: UIViewController, UICollectionViewDataSource, UICollectionV
         
         self.moviesCV.delegate = self
         self.moviesCV.dataSource = self
+        
+        
         
     }
     
