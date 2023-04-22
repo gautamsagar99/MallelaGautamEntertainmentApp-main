@@ -45,8 +45,15 @@ class MusicVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         // Pass the selected object to the new view controller.
         switch segue.identifier{
                 case "musicSegue":
-                    let destination = segue.destination as? PlayMusicVC
-            destination?.videoId = musics[(musicTV.indexPathForSelectedRow?.row)!].videoId
+            
+                    if musicTV.indexPathForSelectedRow?.section == 0{
+                let destination = segue.destination as? PlayMusicVC
+        destination?.videoId = musics[(musicTV.indexPathForSelectedRow?.row)!].videoId
+            }else{
+                let destination = segue.destination as? PlayMusicVC
+        destination?.videoId = songs[(musicTV.indexPathForSelectedRow?.row)!].videoId
+            }
+                   
             
         default:
             break
