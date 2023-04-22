@@ -29,14 +29,15 @@ class FilmographyVC: UIViewController, UICollectionViewDataSource, UICollectionV
     
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        if indexPath.item ==1 {
+        print(indexPath.item)
+        if indexPath.item == 0 &&  indexPath.item == 5{
             // Third image cell in the section
             return CGSize(width: 100, height: 400)
-//        }
-//              } else {
-//                  // First two imxage cells in the section
-//                  return CGSize(width: collectionView.bounds.width / 2, height: 200)
-//              }
+        
+              } else {
+                  // First two imxage cells in the section
+                  return CGSize(width: collectionView.bounds.width / 2, height: 200)
+              }
           }
     
     

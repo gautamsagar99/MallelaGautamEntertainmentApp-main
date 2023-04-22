@@ -29,6 +29,8 @@ class ActorVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 //        let imageView = SDAnimatedImageView()
 //        let animatedImage = SDAnimatedImage(named: "image.gif")
 //        imageView.image = animatedImage
+        
+        self.actorTableView.reloadData()
     }
 
 
@@ -100,6 +102,17 @@ class ActorVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.transform = CGAffineTransform(translationX: 0, y: tableView.bounds.height)
+        UIView.animate(withDuration: 0.5, delay: 0.1 * Double(indexPath.row), options: [.curveEaseInOut], animations: {
+            cell.transform = CGAffineTransform(translationX: 0, y: 0)
+        }, completion: nil)
+    }
+
+
+    
+    
     func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
         print("inside actor segue")
         i = indexPath
@@ -142,5 +155,12 @@ class ActorVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             break
         }
     }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        actorTableView.reloadData()
+    }
 }
+
 

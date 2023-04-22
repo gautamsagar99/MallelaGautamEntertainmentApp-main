@@ -28,6 +28,12 @@ class MusicVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
        
     }
 
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.transform = CGAffineTransform(translationX: 0, y: tableView.bounds.height)
+        UIView.animate(withDuration: 0.5, delay: 0.05 * Double(indexPath.row), options: [.curveEaseInOut], animations: {
+            cell.transform = CGAffineTransform(translationX: 0, y: 0)
+        }, completion: nil)
+    }
 
 
     
@@ -90,12 +96,12 @@ class MusicVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     //swipe button for adding song to favourite
     func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         if indexPath.section == 0{
-            let addToFav =  UIContextualAction(style: .normal, title: "Add to Fav") { [weak self] (action, view, completionHandler) in
+            let addToFav =  UIContextualAction(style: .normal, title: "♡") { [weak self] (action, view, completionHandler) in
                 self?.addToFavourites(index: indexPath.row)
                 //            completionHandler(true)
                 
             }
-            addToFav.backgroundColor = .systemBlue
+            addToFav.backgroundColor = .purple
             return UISwipeActionsConfiguration(actions: [addToFav])
         }
         else{
@@ -121,6 +127,12 @@ class MusicVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         favouriteSongs.remove(songs[index])
         print(favouriteSongs)
         self.musicTV.reloadData()
+    }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        musicTV.reloadData()
     }
 
 }
