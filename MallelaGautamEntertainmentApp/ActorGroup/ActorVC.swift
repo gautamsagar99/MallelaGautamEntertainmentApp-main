@@ -131,7 +131,7 @@ class ActorVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         switch segue.identifier{
                 case "filmSegue":
                     let destination = segue.destination as? FilmographyVC
-            
+            destination?.images =  actors[(actorTableView.indexPathForSelectedRow?.row)!].movies
 //            destination?.videoId = actors[(actors.indexPathForSelectedRow?.row)!]
         case "actorRatingSegue":
             let destination = segue.destination as! ActorRatingVC

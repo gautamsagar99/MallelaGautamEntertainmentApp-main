@@ -35,7 +35,7 @@ class HomeVC: UIViewController {
         self.profileIV.layer.borderWidth = 2.0
 
         // Set border color to (Red: 0, Green: 103, Blue: 71)
-        self.profileIV.layer.borderColor = UIColor(red: 0/255, green: 103/255, blue: 71/255, alpha: 1.0).cgColor
+//        self.profileIV.layer.borderColor = UIColor(red: 0/255, green: 103/255, blue: 71/255, alpha: 1.0).cgColor
 //        self.profileIV.image = UIImage(named: "person.fill")
     }
     

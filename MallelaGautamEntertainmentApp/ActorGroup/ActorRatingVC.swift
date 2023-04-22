@@ -82,7 +82,7 @@ class ActorRatingVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
         actorIMG.layer.borderWidth = 2.0
 
         // Set border color to (Red: 0, Green: 103, Blue: 71)
-        actorIMG.layer.borderColor = UIColor(red: 0/255, green: 103/255, blue: 71/255, alpha: 1.0).cgColor
+//        actorIMG.layer.borderColor = UIColor(red: 0/255, green: 103/255, blue: 71/255, alpha: 1.0).cgColor
         actorIMG.image = actorimage
         
         
